@@ -21,8 +21,8 @@ text-align: center;
 border-radius: 10px 10px 30px 30px;
 
 -moz-box-shadow: rgb(150,150,150) 5px 5px;
--webkit-box-shadow: rgb(150,150,150) 5px 5px;
-box-shadow: rgb(150,150,150) -5px -5px 10px inset;
+-webkit-box-shadow: rgb(150,150,10) 5px 5px;
+box-shadow: rgb(150,150,150) -5px -5px 5px inset;
 
 background: -webkit-radial-gradient(center,ellipse,#FFFFFF 0%, #006699 100%);
 
