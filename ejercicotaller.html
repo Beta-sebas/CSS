@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='UTF-8'/>
+<title>Prueba De Fuentes</title>
+<link rel='stylesheet' href='css/fuentes.css'/>
+
+</head>
+<body>
+
+  <div id="todo">
+    <header>
+      <h1>Taller Css</h1>
+    </header>
+
+    <section>
+
+      <article>
+        <h2>Diferencia entre px y em</h2>
+
+        <p>En css px y em son conocidas como unidades relativas, a diferencia de las absolutas, no están completamente definidas,
+           ya que su valor siempre está referenciado respecto a otro valor. A pesar de su aparente dificultad, son las más utilizadas
+           en el diseño web por la flexibilidad con la que se adaptan a los diferentes medios.
+        </p>
+
+        <p>
+           A continuación se muestran las tres unidades de medida relativas definidas por CSS y la referencia que toma cada
+           una para determinar su valor real:
+        </p>
+
+        <p>
+          <ul>
+  					<li>em,(no confundir con la etiqueta de HTML) relativa respecto del tamaño de letra del elemento.</li>
+  					<li>ex, relativa respecto de la altura de la letra x ("equis minúscula") del tipo y tamaño de letra del elemento.</li>
+  					<li>px, (píxel) relativa respecto de la resolución de la pantalla del dispositivo en el que se visualiza la página HTML.</li>
+				  </ul>
+        </p>
+
+        <p>
+          Las unidades em y ex no han sido creadas por CSS, sino que llevan décadas utilizándose en el campo de la tipografía.
+          Aunque no es una definición exacta, la unidad 1em equivale a la anchura de la letra M ("eme mayúscula") del tipo y
+          tamaño de letra del elemento.
+        </p>
+
+        <p>
+          La unidad em hace referencia al tamaño en puntos de la letra que se está utilizando. Si se utiliza una tipografía de 12 puntos,
+          1em equivale a 12 puntos. El valor de 1ex se puede aproximar por 0.5 em.
+        </p>
+
+        <span>
+          Si se considera el siguiente ejemplo: p { margin: 1em; }
+        </span>
+        <p>
+          La regla CSS anterior indica que los párrafos deben mostrar un margen de anchura igual a 1em. Como se trata de una unidad de medida
+          relativa, es necesario realizar un cálculo matemático para determinar la anchura real de ese margen.
+        </p>
+        <p>
+          La unidad de medida em siempre hace referencia al tamaño de letra del elemento. Por otra parte, todos los navegadores
+          muestran por defecto el texto de los párrafos con un tamaño de letra de 16 píxel. Por tanto, en este caso el margen de
+          1em equivale a un margen de anchura 16px.
+        </p>
+
+        <span>
+          A continuación se modifica el ejemplo anterior para cambiar el tamaño de letra de los párrafos:
+          p { font-size: 32px; margin: 1em; }
+        </span>
+
+        <p>
+          El valor del margen sigue siendo el mismo en unidades relativas (1em) pero su valor real ha variado porque el tamaño
+          de letra de los párrafos ha variado. En este caso, el margen tendrá una anchura de 32px, ya que 1em siempre equivale
+          al tamaño de letra del elemento.
+        </p>
+
+        <p>
+          Si se quiere reducir la anchura del margen a 16px pero manteniendo el tamaño de letra de los párrafos en 32px, se debe
+          utilizar la siguiente regla CSS:
+        </p>
+        <span>
+          p { font-size: 32px; margin: 0.5em; }
+        </span>
+
+      </article>
+
+      <article>
+
+        <h2>
+          Tipos de letra usando font-family
+        </h2>
+
+        <p class="p1">Esta fuente se importo desde Google fonts mediante el metodo de @import si te gusto encuentra más
+        <a href="https://fonts.google.com/?preview.text_type=custom"target="_blank">aqui</a></p>
+
+        <p class="p2">Esta fuente se importo desde Fontsquirrel mediante el metodo @font-face si es de tu agrado puedes encontrala
+        <a href="https://www.fontsquirrel.com/fonts/alex-brush"target="_blank">aqui</a></p>
+
+        <p class="p3">Esta fuente se importo desde Dafont mediante el metodo @font-face si es de tu agrado puedes encontrala
+        <a href="https://www.dafont.com/es/youtube-star.font"target="_blank">aqui</a></p>
+
+      </article>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
