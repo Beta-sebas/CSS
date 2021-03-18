@@ -1,2 +1,2 @@
 # CSS
-Primeros pasos por el CSS
+taller de CSS resuelto el taller es el archivo ejerciciotaller.html
